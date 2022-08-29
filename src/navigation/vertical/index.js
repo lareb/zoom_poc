@@ -15,7 +15,7 @@ const navigation = () => {
     {
       title: 'Dashboard',
       icon: HomeOutline,
-      path: '/'
+      path: '/profile'
     },
     {
       title: 'Account Settings',

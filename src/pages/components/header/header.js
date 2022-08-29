@@ -29,7 +29,7 @@ export default function Header() {
                     ))}
                   </Box>
                   <Button variant="text" sx={styles.getStartedDesktop}>
-                    <Link path={'/get-started'}>Get Started</Link>
+                    <Link path={'/get_started'}>Get Started</Link>
                   </Button>
                 </Flex>
                 <Button variant="text" sx={styles.getStartedMobile}>

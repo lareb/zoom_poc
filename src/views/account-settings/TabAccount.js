@@ -17,6 +17,9 @@ import IconButton from '@mui/material/IconButton'
 import CardContent from '@mui/material/CardContent'
 import FormControl from '@mui/material/FormControl'
 import Button from '@mui/material/Button'
+import InputAdornment from '@mui/material/InputAdornment'
+import AccountOutline from 'mdi-material-ui/AccountOutline'
+import MessageOutline from 'mdi-material-ui/MessageOutline'
 
 // ** Icons Imports
 import Close from 'mdi-material-ui/Close'
@@ -88,44 +91,73 @@ const TabAccount = () => {
           </Grid>
 
           <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Username' placeholder='johnDoe' defaultValue='johnDoe' />
+            <TextField fullWidth label='First Name' placeholder='First Name' defaultValue='Lareb' />
           </Grid>
           <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Name' placeholder='John Doe' defaultValue='John Doe' />
+            <TextField fullWidth label='Last Name' placeholder='Last Name' defaultValue='Nawab' />
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
               fullWidth
               type='email'
               label='Email'
-              placeholder='johnDoe@example.com'
-              defaultValue='johnDoe@example.com'
+              placeholder='Email'
+              defaultValue='lareb.nawab@gmail.com'
             />
           </Grid>
           <Grid item xs={12} sm={6}>
-            <FormControl fullWidth>
-              <InputLabel>Role</InputLabel>
-              <Select label='Role' defaultValue='admin'>
-                <MenuItem value='admin'>Admin</MenuItem>
-                <MenuItem value='author'>Author</MenuItem>
-                <MenuItem value='editor'>Editor</MenuItem>
-                <MenuItem value='maintainer'>Maintainer</MenuItem>
-                <MenuItem value='subscriber'>Subscriber</MenuItem>
-              </Select>
-            </FormControl>
+            <TextField fullWidth label='Phone' placeholder='Contact Number' defaultValue='808 703 6184' />
           </Grid>
+          <Grid item xs={12} sm={6}>
+            <TextField fullWidth label='Address' placeholder='Full Address' defaultValue='1st Street, Park Avenue NY' />
+          </Grid>          
           <Grid item xs={12} sm={6}>
             <FormControl fullWidth>
               <InputLabel>Status</InputLabel>
-              <Select label='Status' defaultValue='active'>
-                <MenuItem value='active'>Active</MenuItem>
-                <MenuItem value='inactive'>Inactive</MenuItem>
-                <MenuItem value='pending'>Pending</MenuItem>
+              <Select label='Role' defaultValue='active'>
+                <MenuItem value='active'>Ready to Mingle</MenuItem>
+                <MenuItem value='hold'>It's Complicated</MenuItem>
+                <MenuItem value='inactive'>Off the Market</MenuItem>
               </Select>
             </FormControl>
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Company' placeholder='ABC Pvt. Ltd.' defaultValue='ABC Pvt. Ltd.' />
+          <Grid item xs={6}>
+            <TextField
+              fullWidth
+              multiline
+              minRows={3}
+              label='Summary'
+              placeholder='Bio...'
+              sx={{ '& .MuiOutlinedInput-root': { alignItems: 'baseline' } }}
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position='start'>
+                    <MessageOutline />
+                  </InputAdornment>
+                )
+              }}
+            />
+          </Grid>
+
+          <Grid item xs={6}>
+            <Box>
+              <ButtonStyled component='label' variant='contained' htmlFor='account-settings-upload-image'>
+                Upload Profile
+                <input
+                  hidden
+                  type='file'
+                  onChange={onChange}
+                  accept='image/png, image/jpeg'
+                  id='account-settings-upload-image'
+                />
+              </ButtonStyled>
+              <ResetButtonStyled color='success' variant='outlined' onClick={() => setImgSrc('/images/avatars/1.png')}>
+                Download
+              </ResetButtonStyled>
+              <Typography variant='body2' sx={{ marginTop: 5 }}>
+                Allowed PDF or DOCX. Max size of 2M.
+              </Typography>
+            </Box>
           </Grid>
 
           {openAlert ? (

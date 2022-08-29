@@ -74,16 +74,7 @@ const AccountSettings = () => {
             label={
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <FieldJobTitle />
-                <TabName>Field & Job Title</TabName>
-              </Box>
-            }
-          />
-          <Tab
-            value='info'
-            label={
-              <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                <Certificate />
-                <TabName>Specialization</TabName>
+                <TabName>Discipline & Specialization</TabName>
               </Box>
             }
           />
@@ -114,7 +105,15 @@ const AccountSettings = () => {
               </Box>
             }
           />
-
+          <Tab
+            value='info'
+            label={
+              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <Certificate />
+                <TabName>Job Preference</TabName>
+              </Box>
+            }
+          />
         </TabList>
 
         <TabPanel sx={{ p: 0 }} value='account'>
@@ -123,10 +122,6 @@ const AccountSettings = () => {
         <TabPanel sx={{ p: 0 }} value='security'>
           <TabSecurity />
         </TabPanel>
-        <TabPanel sx={{ p: 0 }} value='info'>
-          <TabInfo />
-        </TabPanel>
-
         <TabPanel sx={{ p: 0 }} value='education'>
           <TabInfo />
         </TabPanel>
@@ -136,7 +131,9 @@ const AccountSettings = () => {
         <TabPanel sx={{ p: 0 }} value='past_experience'>
           <TabInfo />
         </TabPanel>
-
+        <TabPanel sx={{ p: 0 }} value='info'>
+          <TabInfo />
+        </TabPanel>
 
       </TabContext>
     </Card>
