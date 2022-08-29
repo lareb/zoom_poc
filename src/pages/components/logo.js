@@ -15,9 +15,7 @@ const LogoStyle = styled('img')({
 
 export default function Logo({ isSticky, footer, ...props }) {
   return (
-    <Link path="/" sx={styles.logo} {...props}>
       <LogoStyle src='/images/skkapd-logo-blue-small.png' alt="dropbox" />
-    </Link>
   );
 }
 const styles = {

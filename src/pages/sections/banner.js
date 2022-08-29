@@ -24,12 +24,10 @@ const Banner = () => {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.content}>
             <Heading as="h1">
-              Build your audience &amp; grow your business online smarter
+              A Creative Way to Hire Top Talents for Your Organization
             </Heading>
             <Text as="p">
-              Get your blood tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
+              Reach professionals with just the right skills and experience.Get great applicants fast.Post your free job in minutes with pre-written job templates.Make a great hire fast!.
             </Text>
             <Box sx={styles.subscribe}>
               <Label htmlFor="email" variant="styles.srOnly">
@@ -43,7 +41,7 @@ const Banner = () => {
               <Button variant="primary">Subscribe</Button>
             </Box>
             <Box sx={styles.sponsoredBy}>
-              <Text as="span">Sponsored by:</Text>
+              <Text as="span">Trusted by:</Text>
               <Box sx={styles.logos}>
                 <Box as="figure" sx={{ display: 'flex' }}>
                   <Image src='/images/paypal.png' alt="paypal" />

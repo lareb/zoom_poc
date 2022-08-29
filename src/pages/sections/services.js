@@ -12,20 +12,20 @@ const data = [
   {
     id: 1,
     icon: '/images/icons/individual.png',
-    title: 'For Individuals',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    title: 'Hire Individuals',
+    description: `Reach professionals with just the right skills and experience.`,
   },
   {
     id: 2,
     icon: '/images/icons/team.png',
-    title: 'For Team',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    title: 'Hire A Team',
+    description: `Are you looking for a team with just the right and demanding skillsets, join now.`,
   },
   {
     id: 3,
     icon: '/images/icons/org.png',
-    title: 'For Organization',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    title: 'Analyze the Trend',
+    description: `Analyze the trend before targeting the talent, Skapp'd rich data will help you to target the best talent in the industry.`,
   },
 ];
 
@@ -35,8 +35,8 @@ const Services = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Successful business start with great feature"
-          description="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
+          title="Great organization run with great talent"
+          description="Build an incredible workplace and grow your business with Skkap's all-in-one platform with amazing talent."
         />
         <Box sx={styles.features}>
           {data?.map((item) => (

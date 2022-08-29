@@ -3,8 +3,6 @@
 import { jsx, Box, Container, Image } from 'theme-ui';
 import SectionHeading from 'src/pages/components/section-heading';
 import Accordion from 'src/pages/components/accordion/accordion';
-import feature from 'public/images/feature.png';
-import emoji from 'public/images/icons/emoji-2.png';
 
 const data = [
   {
