@@ -13,7 +13,7 @@ import GoogleCirclesExtended from 'mdi-material-ui/GoogleCirclesExtended'
 const navigation = () => {
   return [
     {
-      title: 'Dashboard',
+      title: 'Profile',
       icon: HomeOutline,
       path: '/profile'
     },
@@ -22,7 +22,7 @@ const navigation = () => {
       icon: AccountCogOutline,
       path: '/account-settings'
     },
-    {
+    /*{
       sectionTitle: 'Pages'
     },
     {
@@ -70,7 +70,7 @@ const navigation = () => {
       icon: CubeOutline,
       title: 'Form Layouts',
       path: '/form-layouts'
-    }
+    }*/
   ]
 }
 

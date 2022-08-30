@@ -9,7 +9,8 @@ import {
   AchivemenntInfo,
   CertificationsCourseInfo,
   SkillsInfo,
-  ComfortInfo
+  ComfortInfo,
+  JobHuntStatus,
 } from "src/pages/components/forms/Forms";
 import FormCompleted from "src/pages/components/forms/FormCompleted";
 
@@ -30,6 +31,8 @@ import { styled, useTheme } from '@mui/material/styles'
 import MuiCard from '@mui/material/Card'
 import InputAdornment from '@mui/material/InputAdornment'
 import MuiFormControlLabel from '@mui/material/FormControlLabel'
+import Grid from '@mui/material/Grid'
+
 const Card = styled(MuiCard)(({ theme }) => ({
     [theme.breakpoints.up('sm')]: { width: '28rem' }
   }))
@@ -53,38 +56,39 @@ const Signin = () => {
     <div> 
        
       <div className={styles.container}>
+        <Grid container>
+        <FormCard currentStep={formStep} prevFormStep={prevFormStep}>
+          {formStep >= 0 && (
+            <PersonalInfo formStep={formStep} nextFormStep={nextFormStep} />
+          )}
+          {formStep >= 1 && (
+            <BillingInfo formStep={formStep} nextFormStep={nextFormStep} />
+          )}
+          {formStep >= 2 && (
+            <RoleInfo formStep={formStep} nextFormStep={nextFormStep} />
+          )}
+          {formStep >= 3 && (
+            <CredentialsInfo formStep={formStep} nextFormStep={nextFormStep} />
+          )}
+          {formStep >= 4 && (
+            <SpecialistInfo formStep={formStep} nextFormStep={nextFormStep} />
+          )}
+          {formStep >= 5 && (
+            <AchivemenntInfo formStep={formStep} nextFormStep={nextFormStep} />
+          )}
+          {formStep >= 6 && (
+            <CertificationsCourseInfo formStep={formStep} nextFormStep={nextFormStep} />
+          )}
+          {formStep >= 7 && (
+            <SkillsInfo formStep={formStep} nextFormStep={nextFormStep} />
+          )}
+          {formStep >= 8 && (
+            <ComfortInfo formStep={formStep} nextFormStep={nextFormStep} />
+          )}
 
-      <FormCard currentStep={formStep} prevFormStep={prevFormStep}>
-        {formStep >= 0 && (
-          <PersonalInfo formStep={formStep} nextFormStep={nextFormStep} />
-        )}
-        {formStep >= 1 && (
-          <BillingInfo formStep={formStep} nextFormStep={nextFormStep} />
-        )}
-        {formStep >= 2 && (
-          <RoleInfo formStep={formStep} nextFormStep={nextFormStep} />
-        )}
-         {formStep >= 3 && (
-          <CredentialsInfo formStep={formStep} nextFormStep={nextFormStep} />
-        )}
-        {formStep >= 4 && (
-          <SpecialistInfo formStep={formStep} nextFormStep={nextFormStep} />
-        )}
-        {formStep >= 5 && (
-          <AchivemenntInfo formStep={formStep} nextFormStep={nextFormStep} />
-        )}
-        {formStep >= 6 && (
-          <CertificationsCourseInfo formStep={formStep} nextFormStep={nextFormStep} />
-        )}
-        {formStep >= 7 && (
-          <SkillsInfo formStep={formStep} nextFormStep={nextFormStep} />
-        )}
-        {formStep >= 8 && (
-          <ComfortInfo formStep={formStep} nextFormStep={nextFormStep} />
-        )}
-
-        {formStep == 9 && <FormCompleted />}
-      </FormCard>
+          {formStep == 9 && <FormCompleted />}
+        </FormCard>
+      </Grid>
        </div>
     </div>
   

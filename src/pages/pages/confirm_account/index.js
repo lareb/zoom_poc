@@ -162,7 +162,7 @@ const LoginPage = () => {
                   size='large'
                   variant='contained'
                   sx={{ marginBottom: 7 }}
-                  onClick={() => router.push('/candidate-register/')}
+                  onClick={() => router.push('/job_status')}
                 >
                   Begin
                 </Button>
