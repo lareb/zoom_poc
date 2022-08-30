@@ -1,35 +1,15 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Flex, Container, Image, Text, Button } from 'theme-ui';
-import SectionHeading from 'src/pages/components/section-heading';
-import { LearnMore } from 'src/pages/components/link';
 
-const data = [
-  {
-    id: 1,
-    label: 'Medical and vision',
-  },
-  {
-    id: 2,
-    label: 'Life insurance',
-  },
-  {
-    id: 3,
-    label: '400(k) savings',
-  },
-  {
-    id: 4,
-    label: 'HSAs and FSAs',
-  },
-  {
-    id: 5,
-    label: 'Commuter benefits',
-  },
-  {
-    id: 6,
-    label: '529 college savings',
-  },
-];
+import { styled } from '@mui/material/styles'
+
+import Link from 'next/link'
+
+const LinkStyled = styled('a')(({ theme }) => ({
+  textDecoration: 'none',
+  color: "white"
+}))
 
 const WhoYouAre = () => {
   return (
@@ -44,10 +24,18 @@ const WhoYouAre = () => {
           </Box>
 
           <Box sx={styles.rightContent}>
-            <Button variant="info">I am an Employer</Button>
+            <Button variant="info">
+              <Link passHref href='/register'>
+                <LinkStyled>I am an Employer</LinkStyled>
+              </Link>
+            </Button>
           </Box>
           <Box sx={styles.illustration}>
-            <Button variant="info">I am a Job Seeker</Button>
+            <Button variant="info">
+              <Link passHref href='/pages/register'>
+                <LinkStyled>I am a Job Seeker</LinkStyled>
+              </Link>
+            </Button>
           </Box>
           
         </Box>

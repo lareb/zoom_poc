@@ -54,6 +54,12 @@ const LinkStyled = styled('a')(({ theme }) => ({
   color: theme.palette.primary.main
 }))
 
+const ButtonLinkStyled = styled('a')(({ theme }) => ({
+  fontSize: '0.875rem',
+  textDecoration: 'none',
+  color: 'white'
+}))
+
 const FormControlLabel = styled(MuiFormControlLabel)(({ theme }) => ({
   marginTop: theme.spacing(1.5),
   marginBottom: theme.spacing(4),
@@ -101,7 +107,7 @@ const RegisterPage = () => {
           </Box>
           <form noValidate autoComplete='off' onSubmit={e => e.preventDefault()}>
             <TextField autoFocus fullWidth id='first_name' label='First Name' sx={{ marginBottom: 4 }} />
-            <TextField autoFocus fullWidth id='last_name' label='Last Name' sx={{ marginBottom: 4 }} />
+            <TextField fullWidth id='last_name' label='Last Name' sx={{ marginBottom: 4 }} />
             <TextField fullWidth type='email' label='Email' sx={{ marginBottom: 4 }} />
             
             <FormControlLabel
@@ -116,7 +122,10 @@ const RegisterPage = () => {
               }
             />
             <Button fullWidth size='large' type='submit' variant='contained' sx={{ marginBottom: 7 }}>
-              Sign up
+              
+              <Link passHref href='/pages/confirm_account'>
+                <ButtonLinkStyled>Sign up</ButtonLinkStyled>
+              </Link>
             </Button>
             <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Typography variant='body2' sx={{ marginRight: 2 }}>
