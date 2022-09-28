@@ -4,9 +4,9 @@ import { IoMdMenu } from 'react-icons/io';
 import React, { useContext } from 'react';
 import { jsx, Box, Image } from 'theme-ui';
 import { Link } from 'react-scroll';
-import { DrawerContext } from 'src/pages/contexts/drawer/drawer-context';
-import Drawer from 'src/pages/components/drawer';
-import Logo from 'src/pages/components/logo';
+import { DrawerContext } from 'src/lib/contexts/drawer/drawer-context';
+import Drawer from 'src/lib/components/drawer';
+import Logo from 'src/lib/components/logo';
 import menuItems from './header.data';
 import close from 'public/images/icons/close.png';
 

@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography'
 // ** Configs
 import themeConfig from 'src/configs/themeConfig'
 
-import Logo from 'src/pages/components/logo';
+import Logo from 'src/lib/components/logo';
 
 // ** Styled Components
 const MenuHeaderWrapper = styled(Box)(({ theme }) => ({

@@ -3,8 +3,8 @@
 import { jsx, Box, Container, Button, Flex, Checkbox, Label } from 'theme-ui';
 import { useState } from 'react';
 import { rgba } from 'polished';
-import SectionHeading from 'src/pages/components/section-heading';
-import Input from 'src/pages/components/input';
+import SectionHeading from 'src/lib/components/section-heading';
+import Input from 'src/lib/components/input';
 import illustration from 'public/images/subscribe-bg.png';
 
 const SubscribeUs = () => {

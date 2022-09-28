@@ -1,8 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Container, Image } from 'theme-ui';
-import SectionHeading from 'src/pages/components/section-heading';
-import Accordion from 'src/pages/components/accordion/accordion';
+import SectionHeading from 'src/lib/components/section-heading';
+import Accordion from 'src/lib/components/accordion/accordion';
 
 const data = [
   {

@@ -1,8 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Image } from 'theme-ui';
-import { Link } from 'src/pages/components/link';
-import LogoSvg from 'src/pages/components/icons/logo';
 import { styled, useTheme } from '@mui/material/styles'
 
 

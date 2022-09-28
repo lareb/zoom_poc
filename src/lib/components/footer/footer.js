@@ -1,9 +1,9 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Text, Container } from 'theme-ui';
-import Logo from 'src/pages/components/logo';
-import { Link } from 'src/pages/components/link';
-import FooterWidget from 'src/pages/components/footer-widget';
+import Logo from 'src/lib/components/logo';
+import { Link } from 'src/lib/components/link';
+import FooterWidget from 'src/lib/components/footer-widget';
 import { menuItems, footerNav } from './footer.data';
 import { rgba } from 'polished';
 

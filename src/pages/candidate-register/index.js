@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import FormCard from "src/pages/components/forms/FormCard";
+import FormCard from "src/lib/components/forms/FormCard";
 import {
   BillingInfo,
   PersonalInfo,
@@ -11,8 +11,8 @@ import {
   SkillsInfo,
   ComfortInfo,
   JobHuntStatus,
-} from "src/pages/components/forms/Forms";
-import FormCompleted from "src/pages/components/forms/FormCompleted";
+} from "src/lib/components/forms/Forms";
+import FormCompleted from "src/lib/components/forms/FormCompleted";
 
 import styles from "styles/styles.module.scss";
 // ** MUI Components

@@ -1,5 +1,3 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
 import { jsx, Box, Flex, Container, Image, Text, Button } from 'theme-ui';
 
 import { styled } from '@mui/material/styles'
@@ -16,14 +14,14 @@ const WhoYouAre = () => {
     <Box as="section" variant="section.WhoYouAre">
       <Container>
         <Box sx={styles.contentWrapper}>
-          <Box sx={styles.rightContent}>
+          <Box>
             <Image src='/images/banner.png' alt="banner" width={600} />
           </Box>
           <Box sx={styles.illustration}>
             <Image src='/images/work-hard.png' alt="WhoYouAre" width={550} />
           </Box>
 
-          <Box sx={styles.rightContent}>
+          <Box>
             <Button variant="info">
               <Link passHref href='/register'>
                 <LinkStyled>I am an Employer</LinkStyled>

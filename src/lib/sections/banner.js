@@ -10,11 +10,7 @@ import {
   Image,
   Button,
 } from 'theme-ui';
-import Input from 'src/pages/components/input';
-import banner from 'public/images/banner.png';
-import paypal from 'public/images/paypal.png';
-import google from 'public/images/google.png';
-import dropbox from 'public/images/dropbox.png';
+import Input from 'src/lib/components/input';
 import { rgba } from 'polished';
 
 const Banner = () => {

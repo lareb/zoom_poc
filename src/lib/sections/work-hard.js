@@ -1,8 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Flex, Container, Image, Text } from 'theme-ui';
-import SectionHeading from 'src/pages/components/section-heading';
-import { LearnMore } from 'src/pages/components/link';
+import SectionHeading from 'src/lib/components/section-heading';
+import { LearnMore } from 'src/lib/components/link';
 import workHard from 'public/images/work-hard.png';
 import emoji from 'public/images/icons/emoji.png';
 import check from 'public/images/icons/check-circle.png';

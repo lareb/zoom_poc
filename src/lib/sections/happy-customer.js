@@ -1,8 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Container, Image } from 'theme-ui';
-import SectionHeading from 'src/pages/components/section-heading';
-import { LearnMore } from 'src/pages/components/link';
+import SectionHeading from 'src/lib/components/section-heading';
+import { LearnMore } from 'src/lib/components/link';
 
 const HappyCustomer = () => {
   return (

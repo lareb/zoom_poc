@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Image, Heading, Text } from 'theme-ui';
 import chat from 'public/images/icons/chat.png';
-import { Link } from 'src/pages/components/link';
+import { Link } from 'src/lib/components/link';
 import { rgba } from 'polished';
 
 const BlogPost = ({ post }) => {

@@ -2,9 +2,9 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Flex, Button } from 'theme-ui';
 import Sticky from 'react-stickynode';
-import Logo from 'src/pages/components/logo';
-import { NavLink, Link } from 'src/pages/components/link';
-import { DrawerProvider } from 'src/pages/contexts/drawer/drawer-provider';
+import Logo from 'src/lib/components/logo';
+import { NavLink, Link } from 'src/lib/components/link';
+import { DrawerProvider } from 'src/lib/contexts/drawer/drawer-provider';
 import DrawerNav from './drawer-nav';
 import menuItems from './header.data';
 

@@ -1,16 +1,16 @@
 import React from 'react';
 import { ThemeProvider } from 'theme-ui';
-import theme from 'src/pages/theme/index';
-import SEO from 'src/pages/components/seo';
-import Layout from 'src/pages/components/layout';
-import Banner from 'src/pages/sections/banner';
-import Services from 'src/pages/sections/services';
-import ExcitingFeatures from 'src/pages/sections/exciting-features';
-import WorkHard from 'src/pages/sections/work-hard';
-import UltimateFeatures from 'src/pages/sections/ultimate-features';
-import HappyCustomer from 'src/pages/sections/happy-customer';
-import Blog from 'src/pages/sections/blog';
-import SubscribeUs from 'src/pages/sections/subscribe-us';
+import theme from 'src/lib/theme/index';
+import SEO from 'src/lib/components/seo';
+import Layout from 'src/lib/components/layout';
+import Banner from 'src/lib/sections/banner';
+import Services from 'src/lib/sections/services';
+import ExcitingFeatures from 'src/lib/sections/exciting-features';
+import WorkHard from 'src/lib/sections/work-hard';
+import UltimateFeatures from 'src/lib/sections/ultimate-features';
+import HappyCustomer from 'src/lib/sections/happy-customer';
+import Blog from 'src/lib/sections/blog';
+import SubscribeUs from 'src/lib/sections/subscribe-us';
 // ** Layout Import
 import BlankLayout from 'src/@core/layouts/BlankLayout'
 

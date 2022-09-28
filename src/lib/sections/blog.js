@@ -3,12 +3,9 @@
 import { jsx, Box, Button, Container } from 'theme-ui';
 import Slider from 'react-slick';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
-import SectionHeading from 'src/pages/components/section-heading';
-import BlogPost from 'src/pages/components/cards/blog-post';
+import SectionHeading from 'src/lib/components/section-heading';
+import BlogPost from 'src/lib/components/cards/blog-post';
 
-import thumb1 from 'public/images/blog/1.png';
-import thumb2 from 'public/images/blog/2.png';
-import thumb3 from 'public/images/blog/3.png';
 
 const data = [
   {

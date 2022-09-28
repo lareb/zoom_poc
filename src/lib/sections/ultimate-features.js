@@ -1,8 +1,8 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Container } from 'theme-ui';
-import SectionHeading from 'src/pages/components/section-heading';
-import Feature from 'src/pages/components/cards/feature';
+import SectionHeading from 'src/lib/components/section-heading';
+import Feature from 'src/lib/components/cards/feature';
 
 const data = [
   {

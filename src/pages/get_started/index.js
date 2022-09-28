@@ -1,12 +1,12 @@
 import React from 'react';
 import { ThemeProvider } from 'theme-ui';
-import theme from 'src/pages/theme/index';
-import SEO from 'src/pages/components/seo';
-import Layout from 'src/pages/components/layout';
+import theme from 'src/lib/theme/index';
+import SEO from 'src/lib/components/seo';
+import Layout from 'src/lib/components/layout';
 
-import WhoYouAre from 'src/pages/get_started/work-hard';
+import WhoYouAre from 'src/lib/components/work-hard';
 
-import SubscribeUs from 'src/pages/sections/subscribe-us';
+import SubscribeUs from 'src/lib/sections/subscribe-us';
 // ** Layout Import
 import BlankLayout from 'src/@core/layouts/BlankLayout'
 

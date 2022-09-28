@@ -38,9 +38,7 @@ import BlankLayout from 'src/@core/layouts/BlankLayout'
 // ** Demo Imports
 import FooterIllustrationsV1 from 'src/views/pages/auth/FooterIllustration'
 
-import Logo from 'src/pages/components/logo';
-
-import Header from 'src/pages/components/header/header';
+import Logo from 'src/lib/components/logo';
 
 
 // ** Styled Components
