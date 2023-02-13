@@ -15,7 +15,7 @@ import DotsVertical from 'mdi-material-ui/DotsVertical'
 import CellphoneLink from 'mdi-material-ui/CellphoneLink'
 import AccountOutline from 'mdi-material-ui/AccountOutline'
 import EmailAlert from 'mdi-material-ui/EmailAlertOutline'
-import EmailSend from 'mdi-material-ui/EmailSendOutline'
+import EmailSendOutline from 'mdi-material-ui/EmailSendOutline'
 import Cancel from 'mdi-material-ui/Cancel'
 import FlashAlert from 'mdi-material-ui/FlashAlertOutline'
 
@@ -30,7 +30,7 @@ const salesData = [
     stats: '10',
     title: 'Applied',
     color: 'info',
-    icon: <EmailSend sx={{ fontSize: '1.75rem' }} />
+    icon: <EmailSendOutline sx={{ fontSize: '1.75rem' }} />
   },
   {
     stats: '5',

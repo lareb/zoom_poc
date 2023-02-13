@@ -12,6 +12,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar'
 // ** Component Imports
 import Drawer from './Drawer'
 import VerticalNavItems from './VerticalNavItems'
+import OnBoardFlow from './OnBoardFlow'
 import VerticalNavHeader from './VerticalNavHeader'
 
 // ** Util Import
@@ -82,7 +83,9 @@ const Navigation = props => {
 
   return (
     <Drawer {...props}>
+      {/* Logo and geader */}
       <VerticalNavHeader {...props} />
+      
       <StyledBoxForShadow
         ref={shadowRef}
         sx={{
@@ -111,13 +114,20 @@ const Navigation = props => {
               userVerticalNavMenuContent(props)
             ) : (
               <List className='nav-items' sx={{ transition: 'padding .25s ease', pr: 4.5 }}>
-                <VerticalNavItems
-                  groupActive={groupActive}
-                  setGroupActive={setGroupActive}
-                  currentActiveGroup={currentActiveGroup}
-                  setCurrentActiveGroup={setCurrentActiveGroup}
-                  {...props}
-                />
+                  {
+                    props.onboardFlow 
+                    ?
+                    <OnBoardFlow />
+                    :
+                      <VerticalNavItems
+                        groupActive={groupActive}
+                        setGroupActive={setGroupActive}
+                        currentActiveGroup={currentActiveGroup}
+                        setCurrentActiveGroup={setCurrentActiveGroup}
+                        {...props}
+                      />
+                  }
+                
               </List>
             )}
           </Box>

@@ -54,10 +54,12 @@ const VerticalLayout = props => {
   const navWidth = themeConfig.navigationSize
 
   // ** States
-  const [navVisible, setNavVisible] = useState(false)
+  const [navVisible, setNavVisible] = useState(true)
 
   // ** Toggle Functions
   const toggleNavVisibility = () => setNavVisible(!navVisible)
+
+  console.log(props.onboardFlow, "=======================>")
 
   return (
     <>
@@ -67,6 +69,7 @@ const VerticalLayout = props => {
           navVisible={navVisible}
           setNavVisible={setNavVisible}
           toggleNavVisibility={toggleNavVisibility}
+          onBoardFlow={props.onboardFlow}
           {...props}
         />
         <MainContentWrapper className='layout-content-wrapper'>
