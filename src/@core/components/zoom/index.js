@@ -62,50 +62,12 @@ const ZoomSDK = () => {
     // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/webinars#join-registered
     const registrantToken = ''
 
-
-    const getSignature = async (e) => {
-        e.preventDefault();
-        // if (data.password !== data.confirmpassword) {
-        //     setError(true);
-        //     seterrorMessage("Password and Confirm Password should be same.");
-        //     return
-        // }
-        // setError(false);
-        try {
-            const response = await axios.post('/api/v1/filters/zoom_signature', {
-                meetingNumber: meetingId,
-                role: role,
-            });
-            // console.log(response);
-            if (response) {
-                console.log(response)
-                startMeeting(response.signature)
-                // setSuccess(true);
-                // setsuccessMessage("Account has been confirmed, please login to the Portal");
-            }
-        } catch (error) {
-            console.log(error, "============")
-            // setError(true);
-            // seterrorMessage("Something went wrong.");
-            // setTimeout(() => {
-            //     setError(false)
-            // }, 6000);
-        }
-
-    }
-
-
-    const getSignatureBKP = (e) => {
+    const getSignature = (e) => {
         e.preventDefault();
 
-        fetch(signatureEndpoint, {
+        fetch('/api/v1/filters/zoom_signature', {
             method: 'POST',
-            headers: {
-                Accept: "application/json",
-                "Content-Type": "application/json",
-            },
-
-            // headers: { 'Content-Type': 'application/json', 'crossorigin': true },
+            headers: { 'Content-Type': 'application/json', 'crossorigin': true },
             body: JSON.stringify({
                 meetingNumber: meetingId,
                 role: role
