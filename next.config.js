@@ -16,3 +16,14 @@ module.exports = {
     return config
   }
 }
+
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'http://ec2-13-233-133-180.ap-south-1.compute.amazonaws.com/:path*'
+      }
+    ]
+  }
+}

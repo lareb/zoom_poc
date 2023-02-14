@@ -45,7 +45,7 @@ const ZoomSDK = () => {
     }
 
     // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
-    const signatureEndpoint = 'http://ec2-13-233-133-180.ap-south-1.compute.amazonaws.com/api/v1/filters/zoom_signature'
+    // const signatureEndpoint = 'http://ec2-13-233-133-180.ap-south-1.compute.amazonaws.com/api/v1/filters/zoom_signature'
 
     // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
     // https://us05web.zoom.us/j/85914734918?pwd=Tm04ZzFyRG1vQlVaWDAzQ2VsTEg2dz09
@@ -63,7 +63,7 @@ const ZoomSDK = () => {
     const registrantToken = ''
 
 
-    async function getSignature(e) {
+    const getSignature = async (e) => {
         e.preventDefault();
         // if (data.password !== data.confirmpassword) {
         //     setError(true);
@@ -72,7 +72,7 @@ const ZoomSDK = () => {
         // }
         // setError(false);
         try {
-            const response = await axios.post(signatureEndpoint, {
+            const response = await axios.post('/api/v1/filters/zoom_signature', {
                 meetingNumber: meetingId,
                 role: role,
             });
