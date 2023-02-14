@@ -20,6 +20,10 @@ import { ZoomMtg } from '@zoomus/websdk';
 // import styles from "styles/zoom.scss";
 import styles from "styles/styles.module.scss";
 
+import "@zoomus/websdk/dist/css/bootstrap.css"
+import "@zoomus/websdk/dist/css/react-select.css"
+// import "/styles/zoomStyle.css"
+
 ZoomMtg.setZoomJSLib('https://source.zoom.us/2.9.7/lib', '/av');
 
 ZoomMtg.preLoadWasm();
@@ -112,54 +116,57 @@ const ZoomSDK = () => {
     }
 
     return (
-        <Card>
-            <CardContent>
-                <Typography variant='h5'>Please Provide details to start the Online Class</Typography>
-                <form onSubmit={getSignature}>
-                    <Grid container spacing={7} sx={{ marginTop: 4.8, marginBottom: 3 }}>
-                        <Grid item xs={12} sm={6}>
-                            <TextField
-                                fullWidth
-                                label='Meeting ID'
-                                placeholder='Meeting ID'
-                                // defaultValue='Lareb Nawab' 
-                                onChange={(e) => setMeetingId(e.target.value)}
-                            />
-                        </Grid>
+        <div>
+            <main>
+                <Card>
+                    <CardContent>
+                        <Typography variant='h5'>Please Provide details to start the Online Class</Typography>
+                        <form onSubmit={getSignature}>
+                            <Grid container spacing={7} sx={{ marginTop: 4.8, marginBottom: 3 }}>
+                                <Grid item xs={12} sm={6}>
+                                    <TextField
+                                        fullWidth
+                                        label='Meeting ID'
+                                        placeholder='Meeting ID'
+                                        // defaultValue='Lareb Nawab' 
+                                        onChange={(e) => setMeetingId(e.target.value)}
+                                    />
+                                </Grid>
 
-                        <Grid item xs={12} sm={6}>
-                            <TextField
-                                fullWidth
-                                label='Full Name'
-                                placeholder='First Name'
-                                // defaultValue='Lareb Nawab' 
-                                onChange={(e) => setFullName(e.target.value)}
-                            />
-                        </Grid>
-                        <Grid item xs={12} sm={6}>
-                            <TextField
-                                fullWidth
-                                type='email'
-                                label='Email'
-                                placeholder='Email'
-                                // defaultValue='lareb.nawab@gmail.com'
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
-                        </Grid>
+                                <Grid item xs={12} sm={6}>
+                                    <TextField
+                                        fullWidth
+                                        label='Full Name'
+                                        placeholder='First Name'
+                                        // defaultValue='Lareb Nawab' 
+                                        onChange={(e) => setFullName(e.target.value)}
+                                    />
+                                </Grid>
+                                <Grid item xs={12} sm={6}>
+                                    <TextField
+                                        fullWidth
+                                        type='email'
+                                        label='Email'
+                                        placeholder='Email'
+                                        // defaultValue='lareb.nawab@gmail.com'
+                                        onChange={(e) => setEmail(e.target.value)}
+                                    />
+                                </Grid>
 
-                        <Grid item xs={12} sm={6}>
-                            <Button type='submit' variant='contained' sx={{ marginRight: 3.5 }}>
-                                Let's Start
-                            </Button>
-                            <Button type='reset' variant='outlined' color='secondary'>
-                                Reset
-                            </Button>
-                        </Grid>
-                    </Grid>
-                </form>
-            </CardContent>
-        </Card>
-
+                                <Grid item xs={12} sm={6}>
+                                    <Button type='submit' variant='contained' sx={{ marginRight: 3.5 }}>
+                                        Let's Start
+                                    </Button>
+                                    <Button type='reset' variant='outlined' color='secondary'>
+                                        Reset
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </form>
+                    </CardContent>
+                </Card>
+             </main>
+        </div>
         // <div>
         //     <main>
         //         <h1>Please provide details to start the Online Session</h1>
