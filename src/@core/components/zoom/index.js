@@ -66,7 +66,12 @@ const ZoomSDK = () => {
 
         fetch(signatureEndpoint, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+            },
+
+            // headers: { 'Content-Type': 'application/json', 'crossorigin': true },
             body: JSON.stringify({
                 meetingNumber: meetingId,
                 role: role
