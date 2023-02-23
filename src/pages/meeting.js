@@ -9,8 +9,8 @@ import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 import Button from '@mui/material/Button'
-
-
+// ** Layout Import
+import BlankLayout from 'src/@core/layouts/BlankLayout'
 // ** Icons Imports
 import Close from 'mdi-material-ui/Close'
 
@@ -30,4 +30,5 @@ const TabAccount = () => {
   )
 }
 
+TabAccount.getLayout = page => <BlankLayout>{page}</BlankLayout>
 export default TabAccount

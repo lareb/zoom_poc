@@ -10,11 +10,14 @@ import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 import Button from '@mui/material/Button'
+import Box from '@mui/material/Box'
 import axios from 'axios';
-
+import Logo from 'src/lib/components/logo';
 
 // ** Icons Imports
 import Close from 'mdi-material-ui/Close'
+// ** Configs
+import themeConfig from 'src/configs/themeConfig'
 
 import { ZoomMtg } from '@zoomus/websdk';
 // import styles from "styles/zoom.scss";
@@ -118,8 +121,18 @@ const ZoomSDK = () => {
     return (
         <div>
             <main>
+                <Box className='content-center'>
                 <Card>
                     <CardContent>
+                        <Box sx={{ mb: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <Logo />
+                        </Box>
+                        <Box sx={{ mb: 6 }}>
+                            <Typography variant='h5' sx={{ fontWeight: 600, marginBottom: 1.5 }}>
+                                Welcome to {themeConfig.templateName}! 👋🏻
+                            </Typography>
+                            <Typography variant='body2'>Please sign-in to your account and start the adventure</Typography>
+                        </Box>                        
                         <Typography variant='h5'>Please Provide details to start the Online Class</Typography>
                         <form onSubmit={getSignature}>
                             <Grid container spacing={7} sx={{ marginTop: 4.8, marginBottom: 3 }}>
@@ -165,6 +178,7 @@ const ZoomSDK = () => {
                         </form>
                     </CardContent>
                 </Card>
+                </Box>
              </main>
         </div>
         // <div>
