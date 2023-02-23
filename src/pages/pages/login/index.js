@@ -134,7 +134,7 @@ const LoginPage = () => {
                   size='large'
                   variant='contained'
                   sx={{ marginBottom: 7 }}
-                  onClick={() => router.push('/profile')}
+                  onClick={() => router.push('/metting')}
                 >
                   Login
                 </Button>

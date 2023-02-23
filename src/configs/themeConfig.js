@@ -1,6 +1,6 @@
 const themeConfig = {
   // ** Layout Configs
-  templateName: "SKKAP'd" /* App Name */,
+  templateName: "Learn" /* App Name */,
   mode: 'light' /* light | dark */,
   contentWidth: 'boxed' /* full | boxed */,
   // ** Routing Configs

@@ -16,7 +16,7 @@ export default [
   },
   {
     path: 'blog',
-    label: 'Blog',
+    label: 'Classes',
     link: 'false'
   },
   {

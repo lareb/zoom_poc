@@ -12,22 +12,22 @@ const data = [
     id: 1,
     thumb: '/images/blog/1.png',
     commentCount: 22,
-    link: '#!',
-    title: `How to work with prototype design with adobe xd featuring tools`,
+    link: '/meeting',
+    title: `Acoustic guitar class for beginners`,
   },
   {
     id: 2,
     thumb: '/images/blog/2.png',
     commentCount: 15,
-    link: '#!',
-    title: `Create multiple artboard by using figma prototyping development`,
+    link: '/meeting',
+    title: `Become a professional drummer with Jack Neil`,
   },
   {
     id: 3,
     thumb: '/images/blog/3.png',
     commentCount: 18,
-    link: '#!',
-    title: `Convert your web layout theming easily with sketch zeplin extension`,
+    link: '/meeting',
+    title: `Katthakk in 45 days, Step up with Manisha`,
   },
 ];
 
@@ -80,7 +80,7 @@ const Blog = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Popular blog post we update everyday"
+          title="Popular Music classes from the experts"
           description="Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click."
         />
         <Slider sx={styles.grid} {...settings}>
