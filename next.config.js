@@ -5,7 +5,7 @@ module.exports = {
     return [
       {
         source: '/:path*',
-        destination: 'http://ec2-13-233-133-180.ap-south-1.compute.amazonaws.com/:path*'
+        destination: 'https://admin.skappd.com/:path*'
       }
     ]
   },
