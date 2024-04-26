@@ -27,7 +27,7 @@ import "@zoomus/websdk/dist/css/bootstrap.css"
 import "@zoomus/websdk/dist/css/react-select.css"
 // import "/styles/zoomStyle.css"
 
-ZoomMtg.setZoomJSLib('https://source.zoom.us/2.9.7/lib', '/av');
+ZoomMtg.setZoomJSLib('https://source.zoom.us/2.18.3/lib', '/av');
 
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
